@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
     end
 
     # copy project file into var/www in node
-    vm1.vm.synced_folder ".", "/var/www/backend", create: true
+    vm1.vm.synced_folder "./payment-service", "/var/www/backend", create: true
   end
 
 end
